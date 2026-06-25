@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Business Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7ff;color:#222}
+    header{background:#111;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
+    header a{color:#fff;text-decoration:none;margin-left:15px}
+    .hero{padding:60px 30px;background:#fff;text-align:center}
+    .hero h1{font-size:40px;margin-bottom:10px}
+    .hero p{font-size:18px;color:#555}
+    .container{max-width:1000px;margin:auto;padding:30px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+    .card h3{margin-top:0}
+    .form-box{max-width:500px;margin:40px auto;background:#fff;padding:25px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+    input,textarea{width:100%;padding:12px;margin-bottom:15px;border-radius:6px;border:1px solid #ccc;font-size:14px}
+    button{width:100%;padding:14px;background:#4f5cff;color:#fff;border:none;border-radius:6px;font-size:16px;cursor:pointer}
+    button:hover{opacity:.9}
+    footer{background:#111;color:#fff;text-align:center;padding:20px;margin-top:50px}
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>Local Business</strong>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Get Started</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>We help local businesses grow online</h1>
+  <p>Tell us about your business and we’ll help you build a website.</p>
+</section>
+
+<section id="services" class="container">
+  <div class="cards">
+    <div class="card">
+      <h3>Fast Website</h3>
+      <p>Lightweight and mobile-friendly websites.</p>
+    </div>
+    <div class="card">
+      <h3>Free Hosting</h3>
+      <p>Hosted free on GitHub Pages.</p>
+    </div>
+    <div class="card">
+      <h3>Easy Contact</h3>
+      <p>Visitors can contact you directly via email.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="form-box">
+  <h2>Get Started Instantly</h2>
+
+  <!-- WORKING FORM (Email Delivery) -->
+  <form action="https://formsubmit.co/yugbahadurthapa013@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="name" placeholder="Your Name / Business Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Describe your business / requirements" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Local Business • Built with ❤️ on GitHub Pages
+</footer>
+
+</body>
+</html>
